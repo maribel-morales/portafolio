@@ -426,6 +426,15 @@ body {
     transform: none
 }
 
+.fa-github:before {
+    content: "\f09b";
+    color: var(--muted);
+}
+.fa-linkedin:before {
+    content: "\f08c";
+    color: var(--muted);
+}
+
 /* Responsive */
 @media (max-width:980px) {
     .hero {
