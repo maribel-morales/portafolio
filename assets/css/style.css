@@ -2,8 +2,8 @@
     --bg: #212529;
     --card: #0b1220;
     --muted: #94a3b8;
-    --accent-1: #7dd3fc;
-    --accent-2: #7c3aed;
+    --accent-1: #7D117C;
+    --accent-2: #87AE6C;
     --glass: rgba(255, 255, 255, 0.04);
     --glass-2: rgba(255, 255, 255, 0.02);
     --white: #f8fafc;
@@ -21,7 +21,7 @@ body {
 }
 
 body {
-    background: linear-gradient(180deg, #071025 0%, #071827 60%);
+    background-image: radial-gradient(circle, #071025, #061226, #061426, #061627, #071827);
     color: var(--white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -206,7 +206,7 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.7;
-    
+
 }
 
 .profile-stats {
@@ -243,7 +243,7 @@ body {
 }
 
 .section h2 {
-    color: var(--accent-1);
+    color: var(--accent-2);
     margin: 0 0 0.8rem;
     font-size: 1.2rem
 }
@@ -432,9 +432,32 @@ body {
     content: "\f09b";
     color: var(--muted);
 }
+
 .fa-linkedin:before {
     content: "\f08c";
     color: var(--muted);
+}
+
+/* Botón "Subir arriba" estilo glass */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(30, 58, 138, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  color: #1e3a8a;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background: rgba(30, 58, 138, 0.2);
 }
 
 /* Responsive */
